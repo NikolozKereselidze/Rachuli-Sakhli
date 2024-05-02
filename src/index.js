@@ -1,1 +1,4 @@
-console.log("Initialize everything");
+import { initialize } from "./initialize";
+import "./css/style.css";
+
+initialize();
