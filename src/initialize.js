@@ -17,8 +17,8 @@ function createNav() {
 }
 
 function createMain() {
-  const mainContent = document.createElement("header");
-  mainContent.classList.add("header");
+  const mainContent = document.createElement("main");
+  mainContent.classList.add("main");
 
   const title = document.createElement("h1");
   title.textContent = "Rachuli Sakhli";
