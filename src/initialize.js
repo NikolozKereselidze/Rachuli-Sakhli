@@ -1,3 +1,5 @@
+const content = document.querySelector(".content");
+
 export function createNav() {
   const navContent = document.createElement("header");
   navContent.classList.add("header");
@@ -17,7 +19,7 @@ export function createNav() {
   navContent.appendChild(menuButton);
   navContent.appendChild(aboutButton);
 
-  return navContent;
+  content.appendChild(navContent);
 }
 
 function addBtnNavClass(btn, btnClass) {
@@ -48,8 +50,12 @@ function createButton() {
 }
 
 export function initialize() {
-  const content = document.querySelector(".content");
-
-  content.appendChild(createNav());
   content.appendChild(createMain());
+  document.querySelector(".home-button").classList.add("active");
+}
+
+export function removeHome() {
+  content.innerHTML = "";
+  createNav();
+  document.querySelector(".home-button").classList.remove("active");
 }

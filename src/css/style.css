@@ -85,3 +85,68 @@ header > button:hover,
   color: var(--secondary);
   font-size: 1.8rem;
 }
+
+/* Menu */
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25rem, 28rem));
+  justify-content: center;
+  padding: 8rem;
+  column-gap: 3.4rem;
+  row-gap: 1.4rem;
+}
+
+.card-0 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../images/lobio.jpg);
+}
+
+.card-1 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../images/shkmeruli.jpg);
+}
+
+.card-2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../images/lobiani.jpg);
+}
+
+.card-3 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+    url(../images/lori.jpeg);
+}
+
+.menu-card {
+  min-height: 25rem;
+  min-width: 30rem;
+  border-radius: 1.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.2s;
+  padding-bottom: 1rem;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card > h3 {
+  color: var(--primary);
+  font-size: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.menu-card > p {
+  font-size: 1.8rem;
+  color: var(--primary-active);
+}
+.menu-card > h3,
+.menu-card > p  {
+  margin-right: 1.2rem;
+}

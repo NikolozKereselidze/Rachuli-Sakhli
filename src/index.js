@@ -1,8 +1,9 @@
 import { initialize } from "./initialize";
-import { initializeMenu } from "./menu";
+import { createNav } from "./initialize";
 import "./css/style.css";
+import { renderPage } from "./renderPage";
 
-
-
+createNav();
 initialize();
-initializeMenu();
+
+renderPage();
