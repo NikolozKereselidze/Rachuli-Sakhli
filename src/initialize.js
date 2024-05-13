@@ -9,15 +9,15 @@ export function createNav() {
   homeButton.classList.add("active");
   const menuButton = createButton();
   menuButton.textContent = "Menu";
-  const aboutButton = createButton();
-  aboutButton.textContent = "About";
+  const reserveButton = createButton();
+  reserveButton.textContent = "Reserve";
 
   addBtnNavClass(homeButton, "home-button");
   addBtnNavClass(menuButton, "menu-button");
-  addBtnNavClass(aboutButton, "about-button");
+  addBtnNavClass(reserveButton, "reserve-button");
   navContent.appendChild(homeButton);
   navContent.appendChild(menuButton);
-  navContent.appendChild(aboutButton);
+  navContent.appendChild(reserveButton);
 
   content.appendChild(navContent);
 }
