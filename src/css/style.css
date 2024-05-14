@@ -147,6 +147,91 @@ header > button:hover,
   color: var(--primary-active);
 }
 .menu-card > h3,
-.menu-card > p  {
+.menu-card > p {
   margin-right: 1.2rem;
 }
+
+/* Reserve */
+.reserve {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserve h3 {
+  color: var(--primary);
+  font-size: 3.4rem;
+}
+
+.reserve-form {
+  margin-top: 20px; /* Add some spacing above the form */
+  width: 35%;
+}
+
+.reserve-form label {
+  display: block; /* Display labels on new lines */
+  margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+.input-flex {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.reserve-text--input {
+  width: 100%;
+}
+
+.reserve-form input[type="text"],
+.reserve-form input[type="date"] {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 8px; /* Add padding inside inputs */
+  margin-bottom: 10px; /* Add spacing between inputs */
+  border: 1px solid #ccc; /* Add a border to inputs */
+  border-radius: 5px; /* Add some border radius for a rounded look */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+label {
+  color: var(--font-color-dark);
+  font-size: 1.6rem;
+}
+
+.reserve-submit--button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reserve-submit--button > button {
+  margin-top: 1rem;
+  color: var(--primary);
+  background-color: var(--primary-active);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reserve-submit--button > button:hover {
+  background-color: var(--background-light-hover);
+}
+
+/* .reserve-form input[type="submit"] {
+  background-color: #4caf50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.reserve-form input[type="submit"]:hover {
+  background-color: #45a049; 
+} */
